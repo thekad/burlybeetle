@@ -110,10 +110,12 @@ very easily use ``-R <list of roles>`` in the options
 
 The elasticsearch rolling-restart strategy is as follows:
 
-#. Restart all client nodes 
-#. Restart all stand-by master nodes
-#. For each data node:
- #. Disable shard relocation
- #. Restart
- #. Enable shard relocation
-#. Restart the active master
+* Restart all client nodes 
+* Restart all stand-by master nodes
+* For each data node:
+
+  * Disable shard relocation
+  * Restart
+  * Enable shard relocation
+
+* Restart the active master
