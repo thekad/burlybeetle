@@ -3,7 +3,7 @@
 import os
 import setuptools
 
-import burlybeetle
+import turtletoss
 
 
 base = os.path.dirname(os.path.abspath(__file__))
@@ -11,11 +11,11 @@ with open(os.path.join(base, 'README.rst')) as f:
     readme = f.read()
 
 setuptools.setup(
-    name='burlybeetle',
+    name='turtletoss',
     author='Jorge Gallegos',
     author_email='kad@close.io',
-    description=burlybeetle.__desc__,
-    url='https://github.com/closeio/burlybeetle',
+    description=turtletoss.__desc__,
+    url='https://github.com/thekad/turtletoss',
     long_description=readme,
     install_requires=[
         'Fabric==1.10.2',
@@ -25,7 +25,7 @@ setuptools.setup(
     license='MIT',
     entry_points={
         'console_scripts': [
-            'burlybeetle=burlybeetle.cli:main',
+            'turtletoss=turtletoss.cli:main',
         ],
     },
     classifiers=[

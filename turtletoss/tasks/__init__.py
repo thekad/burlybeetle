@@ -138,7 +138,7 @@ def script(path):
         raise IOError('Local script {} is not a file'.format(fp))
 
     remote_dir = os.path.join(
-        tempfile.gettempdir(), 'burlybeetle',
+        tempfile.gettempdir(), 'turtletoss',
         env.service_name, env.timestamp,
     )
     env.script_file = os.path.join(remote_dir, os.path.basename(fp))

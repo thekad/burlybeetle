@@ -44,12 +44,12 @@ General Usage
 Each database has its own quirks and peculiarities however the general usage
 of this tool is as follows::
 
-    burlybeetle [options] [stop:"<call>"] [start:"<call>"] [commit] [paranoid] <service> [pre-tasks] restart [post-tasks]
+    turtletoss [options] [stop:"<call>"] [start:"<call>"] [commit] [paranoid] <service> [pre-tasks] restart [post-tasks]
 
 Order is important since Fabric evaluates these tasks in the order they are
 called, explanation follows:
 
-* ``options`` are Fabric valid options since ``burlybeetle`` is just a thin
+* ``options`` are Fabric valid options since ``turtletoss`` is just a thin
   wrapper around Fabric
 * ``stop:"<call>"`` will override the default ``sudo service <foo> stop`` call
   to be executed in each of the nodes

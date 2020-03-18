@@ -10,7 +10,7 @@ from fabric import colors
 from fabric import utils
 from fabric.contrib import console
 
-from burlybeetle.http import curl_and_json
+from turtletoss.http import curl_and_json
 
 
 DEFAULT_INTERVAL = 5  # seconds
