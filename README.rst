@@ -10,6 +10,7 @@ principles:
 * These nodes are sorted in some way, usually
 * You may execute some pre-cluster-roll action
 * For each of the nodes to be restarted:
+
   * You may execute some pre-stop action
   * You stop the service
   * You may execute some post-stop action
@@ -17,6 +18,7 @@ principles:
   * You may execute some pre-start action
   * You start the service
   * You may execute some post-start action
+
 * You may execute some post-cluster-roll action
 
 
